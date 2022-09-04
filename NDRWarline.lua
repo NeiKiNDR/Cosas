@@ -1,6 +1,8 @@
 
 
 
+
+
 local Players = game:GetService("Players")
 local LP = Players["LocalPlayer"]
 while not LP do
@@ -20,7 +22,7 @@ local serverpublico = false
 local breakready = false
 local DetectionCharacter = game:GetService("Players")["LocalPlayer"]["Character"]
 local Finished = false;
-
+local breakready2 = false;
 spawn(function()
 	game:WaitForChild("CoreGui")
 	game.CoreGui:WaitForChild("RobloxPromptGui")
@@ -37,8 +39,11 @@ end)
 local Player = game:GetService('Players').LocalPlayer
 local User = game.Players.LocalPlayer;
 local Mouse = User:GetMouse();
-
-
+local contador = 0;
+local secondpoint = true
+local firstpoint = false
+local number = 0
+local numero = 0
 
 if Settings.MultiFarmAcctounts and game.Players.LocalPlayer.UserId == Settings.IDPlayer or Settings.MultiFarmAcctounts == false then
 game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -419,7 +424,36 @@ if game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.LVL.Val.Text <= "54" then
 			}
 		)	
 end
-repeat wait() until game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.LVL.Val.Text == "55"
+
+repeat 
+	wait(1)
+	pcall(function()
+	contador = contador+1
+	end) 
+	if contador == 10 then
+		game:shutdown()
+		break
+	end
+until game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.LVL.Val.Text == "55"
+
+spawn(function()
+	while ettings.Start and wait(1) do
+		if firstpoint then
+			number = 0
+			numero = numero+1
+			if numero == 25 then
+				game:shutdown()
+			end
+		elseif secondpoint then
+			numero = 0
+			number = number+1
+			if number == 25 then
+				game:shutdown()
+			end
+		end
+	end
+end)
+
 while Settings.Start do
 		local PlayerGui = User:WaitForChild("PlayerGui"); --Vars
 		local HUD = PlayerGui:WaitForChild("HUD");
@@ -437,6 +471,8 @@ while Settings.Start do
 				User.Backpack.ServerTraits.ChatAdvance:FireServer({"k"});
 				task.wait(0.45);
 				User.Backpack.ServerTraits.ChatAdvance:FireServer({Settings.Namek});
+				secondpoint = true
+				firstpoint = false
 				elseif game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.Race.Val.Text == "Namekian" then
 				local args = {
 				[1] = workspace.FriendlyNPCs:FindFirstChild("Start New Game [Redo Character]")
@@ -478,6 +514,7 @@ while Settings.Start do
 				end
 			end
 		end
+		TextLabel.Text = "..."
 		User.Backpack.ServerTraits.ChatStart:FireServer(workspace.FriendlyNPCs["Character Slot Changer"]);
 		task.wait(0.8);
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({"Yes"});
@@ -486,28 +523,43 @@ while Settings.Start do
 		task.wait(0.45);
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({Settings.Normal});
 	repeat game:GetService("RunService").RenderStepped:wait(); until TextLabel.Text == "Loading!" or chatGui == nil;
+	secondpoint = true
+	firstpoint = false
 	if TextLabel.Text == "Loading!" then
 		User.Backpack.ServerTraits.ChatStart:FireServer(workspace.FriendlyNPCs["KAMI"].Chat);
 
-
 spawn(function()
-	while wait(.15) do
+	while wait(.01) do
 		while not DetectionCharacter do
             wait()
 		 end
 		 pcall(function()
 		if game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.Race.Val.Text == "Namekian" then
-		repeat wait(.1)
+			
+		repeat wait(.01)
 	pcall(function()
 	if TextLabel.Text == "Mr Popo is a nice guy" then
 		 breakready = true;
+	elseif TextLabel.Text == "Alright let's do it" then
+		pcall(function()
+				if game:GetService('Players').LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Booster") then
+					breakready2 = true
+					print("boost dado")
+					TextLabel.Text = "boost dado"
+				else
+					print("yes")
+					game:shutdown()
+					TextLabel.Text = "boost no dado"
+				end
+		end)
 	end
 	end)
-until breakready or not DetectionCharacter
+until breakready or breakready2 or not DetectionCharacter
 		end
 	end)
 	end
 end)
+
 print(breakready)
 		if breakready then
 			wait(6)
@@ -601,6 +653,7 @@ print(breakready)
 					end
 			end
 		wait(6)
+		breakready2 = false;
 		User.Backpack.ServerTraits.ChatStart:FireServer(workspace.FriendlyNPCs["Character Slot Changer"]);
 		task.wait(0.8);
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({"Yes"});
@@ -608,7 +661,8 @@ print(breakready)
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({"k"});
 		task.wait(0.45);
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({Settings.Namek});
-
+		secondpoint = false
+		firstpoint = true
 		wait(6)
 	end
 end
