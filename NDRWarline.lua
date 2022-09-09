@@ -43,14 +43,14 @@ local number = 0;
 local numero = 0;
 local tiempo = 0;
 local lagginbugged = false;
-
+local timmer = 0;
 
 function antibuglagging()
-	for i=1,15 do
+	for i=1,20 do
 		wait(1)
 		tiempo = tiempo + 1;
 		print(tiempo)
-		if tiempo == 15 then
+		if tiempo == 20 then
 			lagginbugged = true;
 		end
 	end
@@ -71,10 +71,14 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 if game.PlaceId == 536102540 then
 
 spawn(function()
-for i=1,20 do
-	wait(1)
-serverpublico = true;
-end
+	for i=1,15 do
+		wait(1)
+		timmer = timmer + 1;
+		print(timmer)
+		if timmer == 15 then
+			serverpublico = true;
+		end
+	end
 end)
 repeat wait() until 150 > game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() or serverpublico
 wait(3)
@@ -692,6 +696,10 @@ end)
 		wait(6)
 
 if (Settings.AutoPinger-50) > game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() then
+
+	secondpoint = true
+	firstpoint = false
+
 		game:GetService("StarterGui"):SetCore("SendNotification",{
 		
 		
@@ -724,6 +732,8 @@ if (Settings.AutoPinger-50) > game:GetService("Stats").Network.ServerStatsItem["
 		end
 		end)
 		wait(.3)
+		secondpoint = false
+		firstpoint = true
 		settings():GetService("NetworkSettings").IncomingReplicationLag = (Settings.CustomPing)
 		wait(2)
 		end
