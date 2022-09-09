@@ -1,5 +1,6 @@
 
 
+
 local Players = game:GetService("Players")
 local LP = Players["LocalPlayer"]
 while not LP do
@@ -36,10 +37,26 @@ local Player = game:GetService('Players').LocalPlayer
 local User = game.Players.LocalPlayer;
 local Mouse = User:GetMouse();
 local contador = 0;
-local secondpoint = true
-local firstpoint = false
-local number = 0
-local numero = 0
+local secondpoint = true;
+local firstpoint = false;
+local number = 0;
+local numero = 0;
+local tiempo = 0;
+local lagginbugged = false;
+
+
+function antibuglagging()
+	for i=1,15 do
+		wait(1)
+		tiempo = tiempo + 1;
+		print(tiempo)
+		if tiempo == 15 then
+			lagginbugged = true;
+		end
+	end
+	return lagginbugged;
+end
+
 
 if Settings.MultiFarmAcctounts and game.Players.LocalPlayer.UserId == Settings.IDPlayer or Settings.MultiFarmAcctounts == false then
 game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -61,6 +78,9 @@ end
 end)
 repeat wait() until 150 > game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() or serverpublico
 wait(3)
+spawn(function()
+	antibuglagging()
+end)
 game:GetService("StarterGui"):SetCore("SendNotification",{
 
 
@@ -97,6 +117,10 @@ settings():GetService("NetworkSettings").IncomingReplicationLag = (Settings.Cust
 wait(2)
 end
 end)
+print(lagginbugged)
+if lagginbugged then
+	game:shutdown()
+end
 until NDR
 game:GetService("StarterGui"):SetCore("SendNotification",{
 
