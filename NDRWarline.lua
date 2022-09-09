@@ -1,8 +1,5 @@
 
 
-
-
-
 local Players = game:GetService("Players")
 local LP = Players["LocalPlayer"]
 while not LP do
@@ -27,11 +24,10 @@ spawn(function()
 	game:WaitForChild("CoreGui")
 	game.CoreGui:WaitForChild("RobloxPromptGui")
 	game.CoreGui.RobloxPromptGui:WaitForChild("promptOverlay")
-	_G.xd = true 
-	while _G.xd do wait()
-	if game:GetService("CoreGui").RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt") then 
-	game:GetService("TeleportService"):Teleport(536102540, LocalPlayer)
-	end
+	while wait() do
+		if game:GetService("CoreGui").RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt") then 
+			game:shutdown()
+		end
 	end
 end)
 
@@ -58,7 +54,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 if game.PlaceId == 536102540 then
 
 spawn(function()
-for i=1,10 do
+for i=1,20 do
 	wait(1)
 serverpublico = true;
 end
@@ -437,20 +433,22 @@ repeat
 until game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.LVL.Val.Text == "55"
 
 spawn(function()
-	while ettings.Start and wait(1) do
-		if firstpoint then
-			number = 0
-			numero = numero+1
-			if numero == 25 then
-				game:shutdown()
+	while Settings.Start and wait(1) do
+		pcall(function()
+			if firstpoint then
+				number = 0
+				numero = numero+1
+				if numero == 25 then
+					game:shutdown()
+				end
+			elseif secondpoint then
+				numero = 0
+				number = number+1
+				if number == 25 then
+					game:shutdown()
+				end
 			end
-		elseif secondpoint then
-			numero = 0
-			number = number+1
-			if number == 25 then
-				game:shutdown()
-			end
-		end
+		end)
 	end
 end)
 
@@ -536,31 +534,32 @@ spawn(function()
 		 pcall(function()
 		if game.Players.LocalPlayer.PlayerGui.HUD.Bottom.Stats.Race.Val.Text == "Namekian" then
 			
-		repeat wait(.01)
+repeat wait(.1)
 	pcall(function()
-	if TextLabel.Text == "Mr Popo is a nice guy" then
+		if TextLabel.Text == "Mr Popo is a nice guy" then
 		 breakready = true;
-	elseif TextLabel.Text == "Alright let's do it" then
-		pcall(function()
+		 print(breakready)
+		elseif TextLabel.Text == "Alright let's do it" then
+			pcall(function()
+				wait(.5)
 				if game:GetService('Players').LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Booster") then
 					breakready2 = true
 					print("boost dado")
 					TextLabel.Text = "boost dado"
 				else
-					print("yes")
-					game:shutdown()
+
 					TextLabel.Text = "boost no dado"
+					wait()
+					game:shutdown()
 				end
-		end)
-	end
+			end)
+		end
 	end)
 until breakready or breakready2 or not DetectionCharacter
 		end
 	end)
 	end
 end)
-
-print(breakready)
 		if breakready then
 			wait(6)
 
@@ -654,6 +653,7 @@ print(breakready)
 			end
 		wait(6)
 		breakready2 = false;
+		breakready = false;
 		User.Backpack.ServerTraits.ChatStart:FireServer(workspace.FriendlyNPCs["Character Slot Changer"]);
 		task.wait(0.8);
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({"Yes"});
@@ -661,9 +661,57 @@ print(breakready)
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({"k"});
 		task.wait(0.45);
 		User.Backpack.ServerTraits.ChatAdvance:FireServer({Settings.Namek});
+		print(number)
+		print(numero)
 		secondpoint = false
 		firstpoint = true
 		wait(6)
-	end
+
+if (Settings.AutoPinger-50) > game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() then
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+		
+		
+			Title = "Warline",
+		
+			Text = "Relaggin again..."
+		})
+		
+		repeat wait()
+		pcall(function()
+		if (Settings.AutoPinger+10) > game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() and (Settings.AutoPinger-10) < game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() then
+		NDR1 = true;
+		else
+		NDR1 = false;
+		pcall(function()
+		if (Settings.AutoPinger+20) < game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() then
+		Settings.CustomPing = (Settings.CustomPing - 0.02)
+		elseif (Settings.AutoPinger+20) > game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() then
+		Settings.CustomPing = (Settings.CustomPing + 0.02)
+		else
+			pcall(function()
+		if (Settings.AutoPinger+10) < game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() then
+		
+		Settings.CustomPing = (Settings.CustomPing - 0.01)
+		
+		elseif (Settings.AutoPinger+10) > game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() then
+		Settings.CustomPing = (Settings.CustomPing + 0.01)
+		end
+		end)
+		end
+		end)
+		wait(.3)
+		settings():GetService("NetworkSettings").IncomingReplicationLag = (Settings.CustomPing)
+		wait(2)
+		end
+		end)
+		until NDR1
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+		
+			Title = "Warline",
+		
+			Text = "Ready ^-^"
+		})	
+end
+end
 end
 end
