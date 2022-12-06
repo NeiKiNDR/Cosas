@@ -2595,6 +2595,7 @@
 							
 							Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 224) * SliderLine.AbsoluteSize.X) + tonumber(minvalue))
 							pcall(function()
+								SliderNumber.Text = Value
 								callback(Value)
 							end)
 							SliderLine.Size = UDim2.new(0, math.clamp(mouse.X - SliderLine.AbsolutePosition.X, 0, 224), 0, 12)
@@ -2603,6 +2604,7 @@
 							if Mouse.UserInputType == Enum.UserInputType.MouseButton1 then
 								Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 224) * SliderLine.AbsoluteSize.X) + tonumber(minvalue))
 								pcall(function()
+									SliderNumber.Text = Value
 									callback(Value)
 								end)
 								SliderLine.Size = UDim2.new(0, math.clamp(mouse.X - SliderLine.AbsolutePosition.X, 0, 224), 0, 12)
