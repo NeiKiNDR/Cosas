@@ -2587,11 +2587,12 @@
 						Sliderboton.MouseButton1Down:Connect(function()
 						Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 222) * SliderLine.AbsoluteSize.X) + tonumber(minvalue)) or 0
 						pcall(function()
+							SliderNumber.Text = Value
 							callback(Value)
 						end)
 						SliderLine.Size = UDim2.new(0, math.clamp(mouse.X - SliderLine.AbsolutePosition.X, 0, 224), 0, 12)
 						moveconnection = mouse.Move:Connect(function()
-							SliderNumber.Text = Value
+							
 							Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 224) * SliderLine.AbsoluteSize.X) + tonumber(minvalue))
 							pcall(function()
 								callback(Value)
