@@ -2409,7 +2409,6 @@
 						local secondposition = UDim2.new(0.48, 0, 0.02, 0)
 						capa_4.MouseButton1Click:Connect(function()
 							tog = not tog
-							callback(tog) -- Callbacks whenever we toggle
 							if tog then 
 								game.TweenService:Create(ToggleIcon, TweenInfo.new(0.15, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
 									BackgroundColor3 = Color3.fromRGB(47, 75, 255)
@@ -2427,6 +2426,7 @@
 								}):Play()
 								---We Put our animation here when the toggle is off
 							end
+							callback(tog) -- Callbacks whenever we toggle
 						end)
 					end
 
