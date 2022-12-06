@@ -2324,7 +2324,7 @@
 						SectionName_2.BackgroundTransparency = 1.000
 						SectionName_2.BorderSizePixel = 0
 						SectionName_2.Position = UDim2.new(0.0338482074, 0, 0.25, 0)
-						SectionName_2.Size = UDim2.new(0, 115, 0, 20)
+						SectionName_2.Size = UDim2.new(0, 160, 0, 20)
 						SectionName_2.Font = 19
 						SectionName_2.Text = btnText
 						SectionName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
