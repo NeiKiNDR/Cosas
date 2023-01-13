@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 	--Properties:
 
 	LoadLibrary = {}
@@ -53,14 +47,14 @@
 		UICorner_36.Parent = FrameLoadGui
 		
 		Frame.Parent = FrameLoadGui
-		Frame.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+		Frame.BackgroundColor3 = themes.Background
 		Frame.Size = UDim2.new(0, 238, 0, 131)
 		Frame.Transparency = 0.4
 		
 		UICorner_37.Parent = Frame
 		
 		Frame_2.Parent = FrameLoadGui
-		Frame_2.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+		Frame_2.BackgroundColor3 = themes.Background
 		Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 		Frame_2.Size = UDim2.new(0, 238, 0, 131)
 		Frame_2.Transparency = 0.4
@@ -235,7 +229,7 @@
 			
 			FramePrincipal.Name = "FramePrincipal"
 			FramePrincipal.Parent = NDR
-			FramePrincipal.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			FramePrincipal.BackgroundColor3 = themes.Background
 			FramePrincipal.Position = UDim2.new(0.214463845, 0, 0.156626523, 0)
 			FramePrincipal.Size = UDim2.new(0, 732, 0, 428)
 			FramePrincipal.Visible = false
@@ -437,7 +431,7 @@
 
 			Lista.Name = "Lista"
 			Lista.Parent = FramePrincipal
-			Lista.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			Lista.BackgroundColor3 = themes.Background
 			Lista.Size = UDim2.new(0, 168, 0, 398)
 			
 			UICorner_3.CornerRadius = UDim.new(0, 5)
@@ -522,7 +516,7 @@
 
 			SeccionBase.Name = "SeccionBase"
 			SeccionBase.Parent = FramePrincipal
-			SeccionBase.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			SeccionBase.BackgroundColor3 = themes.Background
 			SeccionBase.Position = UDim2.new(0.231686786, 0, 0.089485988, 0)
 			SeccionBase.Size = UDim2.new(0, 562, 0, 389)
 			
@@ -536,7 +530,7 @@
 
 			Discord_2.Name = "Discord"
 			Discord_2.Parent = SeccionBase
-			Discord_2.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			Discord_2.BackgroundColor3 = themes.Background
 			Discord_2.Position = UDim2.new(0, 0, 0.00111012533, 0)
 			Discord_2.Size = UDim2.new(0, 562, 0, 389)
 			Discord_2.Visible = false
@@ -546,13 +540,13 @@
 			
 			BordeSuperior_3.Name = "BordeSuperior"
 			BordeSuperior_3.Parent = Discord_2
-			BordeSuperior_3.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeSuperior_3.BackgroundColor3 = themes.Background
 			BordeSuperior_3.BorderSizePixel = 0
 			BordeSuperior_3.Size = UDim2.new(0, 561, 0, 8)
 			
 			BordeIzquierdo_3.Name = "BordeIzquierdo"
 			BordeIzquierdo_3.Parent = Discord_2
-			BordeIzquierdo_3.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeIzquierdo_3.BackgroundColor3 = themes.Background
 			BordeIzquierdo_3.BorderSizePixel = 0
 			BordeIzquierdo_3.Size = UDim2.new(0, 5, 0, 388)
 			
@@ -623,7 +617,7 @@
 			
 			Home_2.Name = "Home"
 			Home_2.Parent = SeccionBase
-			Home_2.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			Home_2.BackgroundColor3 = themes.Background
 			Home_2.Position = UDim2.new(0, 0, 0.00111012533, 0)
 			Home_2.Size = UDim2.new(0, 562, 0, 389)
 			Home_2.Visible = true
@@ -633,13 +627,13 @@
 			
 			BordeSuperior_4.Name = "BordeSuperior"
 			BordeSuperior_4.Parent = Home_2
-			BordeSuperior_4.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeSuperior_4.BackgroundColor3 = themes.Background
 			BordeSuperior_4.BorderSizePixel = 0
 			BordeSuperior_4.Size = UDim2.new(0, 561, 0, 8)
 			
 			BordeIzquierdo_4.Name = "BordeIzquierdo"
 			BordeIzquierdo_4.Parent = Home_2
-			BordeIzquierdo_4.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeIzquierdo_4.BackgroundColor3 = themes.Background
 			BordeIzquierdo_4.BorderSizePixel = 0
 			BordeIzquierdo_4.Size = UDim2.new(0, 5, 0, 388)
 			
@@ -788,7 +782,7 @@
 
 			SupportError.Name = "SupportError"
 			SupportError.Parent = SeccionBase
-			SupportError.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			SupportError.BackgroundColor3 = themes.Background
 			SupportError.Position = UDim2.new(0, 0, 0.00111012533, 0)
 			SupportError.Size = UDim2.new(0, 562, 0, 389)
 			SupportError.Visible = false
@@ -798,13 +792,13 @@
 			
 			BordeSuperior_5.Name = "BordeSuperior"
 			BordeSuperior_5.Parent = SupportError
-			BordeSuperior_5.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeSuperior_5.BackgroundColor3 = themes.Background
 			BordeSuperior_5.BorderSizePixel = 0
 			BordeSuperior_5.Size = UDim2.new(0, 561, 0, 8)
 			
 			BordeIzquierdo_5.Name = "BordeIzquierdo"
 			BordeIzquierdo_5.Parent = SupportError
-			BordeIzquierdo_5.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeIzquierdo_5.BackgroundColor3 = themes.Background
 			BordeIzquierdo_5.BorderSizePixel = 0
 			BordeIzquierdo_5.Size = UDim2.new(0, 5, 0, 388)
 			
@@ -869,7 +863,7 @@
 			
 			Profile.Name = "Profile"
 			Profile.Parent = SeccionBase
-			Profile.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			Profile.BackgroundColor3 = themes.Background
 			Profile.Position = UDim2.new(0, 0, 0.00111012533, 0)
 			Profile.Size = UDim2.new(0, 562, 0, 389)
 			Profile.Visible = false
@@ -879,13 +873,13 @@
 			
 			BordeSuperior_6.Name = "BordeSuperior"
 			BordeSuperior_6.Parent = Profile
-			BordeSuperior_6.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeSuperior_6.BackgroundColor3 = themes.Background
 			BordeSuperior_6.BorderSizePixel = 0
 			BordeSuperior_6.Size = UDim2.new(0, 561, 0, 8)
 			
 			BordeIzquierdo_6.Name = "BordeIzquierdo"
 			BordeIzquierdo_6.Parent = Profile
-			BordeIzquierdo_6.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeIzquierdo_6.BackgroundColor3 = themes.Background
 			BordeIzquierdo_6.BorderSizePixel = 0
 			BordeIzquierdo_6.Size = UDim2.new(0, 5, 0, 388)
 			
@@ -971,7 +965,7 @@
 			
 			Ajustes_2.Name = "Ajustes"
 			Ajustes_2.Parent = SeccionBase
-			Ajustes_2.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			Ajustes_2.BackgroundColor3 = themes.Background
 			Ajustes_2.Position = UDim2.new(0, 0, 0.00111012533, 0)
 			Ajustes_2.Size = UDim2.new(0, 562, 0, 389)
 			Ajustes_2.Visible = false
@@ -981,13 +975,13 @@
 			
 			BordeSuperior_7.Name = "BordeSuperior"
 			BordeSuperior_7.Parent = Ajustes_2
-			BordeSuperior_7.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeSuperior_7.BackgroundColor3 = themes.Background
 			BordeSuperior_7.BorderSizePixel = 0
 			BordeSuperior_7.Size = UDim2.new(0, 561, 0, 8)
 			
 			BordeIzquierdo_7.Name = "BordeIzquierdo"
 			BordeIzquierdo_7.Parent = Ajustes_2
-			BordeIzquierdo_7.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			BordeIzquierdo_7.BackgroundColor3 = themes.Background
 			BordeIzquierdo_7.BorderSizePixel = 0
 			BordeIzquierdo_7.Size = UDim2.new(0, 5, 0, 388)
 			
@@ -1174,7 +1168,7 @@
 			
 			SubCapa.Name = "SubCapa"
 			SubCapa.Parent = IconReopener
-			SubCapa.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+			SubCapa.BackgroundColor3 = themes.Background
 			SubCapa.Position = UDim2.new(0.0393939391, 0, 0.0393939391, 0)
 			SubCapa.Size = UDim2.new(0, 60, 0, 60)
 			
@@ -1425,26 +1419,28 @@
 							until tempoinicio
 							FramePrincipal.Visible = true
 						game:GetService("UserInputService").InputBegan:connect(function(key)
-							if key.KeyCode == Enum.KeyCode[KeybindFrameHub.Text] and _G.toggle == false and _G.readytoggle == false then
-								_G.toggle = true
-								script.Parent.Parent.Parent.ClipsDescendants = true -- Groups the UI to ensure that it shrinks the buttons, etc.
-								script.Parent.Parent.Parent:TweenSize(UDim2.new(0,0,0,0),"In","Linear",0.3,false,nil) -- The tweening itself that shrinks the UI
-								wait(0.4) -- This is the time the script below will turn your gui invisible
-								script.Parent.Parent.Parent.Visible = false -- This will ensure your UI is 100% gone
-								iconlog.Visible = true
-								infolog.Visible = true
-								wait(0.1)
-								_G.readytoggle = true
-							elseif key.KeyCode == Enum.KeyCode[KeybindFrameHub.Text] and _G.toggle == true and _G.readytoggle then
-								_G.toggle = false
-								iconlog.Visible = false
-								infolog.Visible = false
-								script.Parent.Parent.Parent.Visible = true -- This will ensure your UI is 100% gone
-								script.Parent.Parent.Parent.ClipsDescendants = false -- Groups the UI to ensure that it shrinks the buttons, etc.
-								script.Parent.Parent.Parent:TweenSize(UDim2.new(0,732,0,428),"In","Linear",0.3,false,nil) -- The tweening itself that shrinks the UI
-								wait(0.3) -- This is the time the script below will turn your gui invisible
-								_G.readytoggle = false
-							end
+							pcall(function()
+								if key.KeyCode == Enum.KeyCode[KeybindFrameHub.Text] and _G.toggle == false and _G.readytoggle == false then
+									_G.toggle = true
+									script.Parent.Parent.Parent.ClipsDescendants = true -- Groups the UI to ensure that it shrinks the buttons, etc.
+									script.Parent.Parent.Parent:TweenSize(UDim2.new(0,0,0,0),"In","Linear",0.3,false,nil) -- The tweening itself that shrinks the UI
+									wait(0.4) -- This is the time the script below will turn your gui invisible
+									script.Parent.Parent.Parent.Visible = false -- This will ensure your UI is 100% gone
+									iconlog.Visible = true
+									infolog.Visible = true
+									wait(0.1)
+									_G.readytoggle = true
+								elseif key.KeyCode == Enum.KeyCode[KeybindFrameHub.Text] and _G.toggle == true and _G.readytoggle then
+									_G.toggle = false
+									iconlog.Visible = false
+									infolog.Visible = false
+									script.Parent.Parent.Parent.Visible = true -- This will ensure your UI is 100% gone
+									script.Parent.Parent.Parent.ClipsDescendants = false -- Groups the UI to ensure that it shrinks the buttons, etc.
+									script.Parent.Parent.Parent:TweenSize(UDim2.new(0,732,0,428),"In","Linear",0.3,false,nil) -- The tweening itself that shrinks the UI
+									wait(0.3) -- This is the time the script below will turn your gui invisible
+									_G.readytoggle = false
+								end
+							end)
 						end)
 					end)
 					end
@@ -1572,14 +1568,18 @@
 										if buttonaba:FindFirstChild("capa") then
 											buttonaba.capa.MouseEnter:Connect(function()
 												pcall(function()
-													buttonaba.capa.SectionName.TextColor3 = Color3.fromRGB(250, 250, 250)
-													buttonaba.capa.SectionName.Bar:TweenSize(UDim2.new(1, 0, 0.1, 0), "Out", "Sine", 0.3, true)
+													if buttonaba.capa.SectionName.TextColor3 ~= Color3.fromRGB(157, 109, 106) then
+														buttonaba.capa.SectionName.TextColor3 = Color3.fromRGB(250, 250, 250)
+														buttonaba.capa.SectionName.Bar:TweenSize(UDim2.new(1, 0, 0.1, 0), "Out", "Sine", 0.3, true)
+													end
 												end)
 											end)
 											buttonaba.capa.MouseLeave:Connect(function()
 												pcall(function()
-													buttonaba.capa.SectionName.TextColor3 = Color3.fromRGB(140, 140, 140)
-													buttonaba.capa.SectionName.Bar:TweenSize(UDim2.new(0, 0, 0.1, 0), "Out", "Sine", 0.3, true)
+													if buttonaba.capa.SectionName.TextColor3 ~= Color3.fromRGB(157, 109, 106) then
+														buttonaba.capa.SectionName.TextColor3 = Color3.fromRGB(140, 140, 140)
+														buttonaba.capa.SectionName.Bar:TweenSize(UDim2.new(0, 0, 0.1, 0), "Out", "Sine", 0.3, true)
+													end
 												end)
 											end)
 										end
@@ -1716,8 +1716,7 @@
 						local KeybindFrameHub = script.Parent
 						
 						KeybindFrameHub.Changed:Connect(function()
-							if KeybindFrameHub.Text == "KeypadMinus" then
-							else
+							if KeybindFrameHub.Text ~= "KeypadMinus" then
 							KeybindFrameHub.Text = KeybindFrameHub.Text:upper()
 							KeybindFrameHub.Text = KeybindFrameHub.Text:sub(1,1)
 							end
@@ -2197,25 +2196,40 @@
 				
 				capa.MouseButton1Click:Connect(function()
 					for i,v in next, pagesFolder:GetChildren() do -- We get all the pages that we added
-						v.Visible = false   -- then we make them invisible 
+						v.Visible = false   -- then we make them invisible
+						game.TweenService:Create(v,TweenInfo.new(.3, Enum.EasingStyle.Linear),{Position = UDim2.new(0, -0.5,0, 0)}):Play()
 					end 
 					for i,v in next, SeccionBase:GetChildren() do -- We get all the pages that we added
 						if v:IsA("Frame") then 
 							if v.Name ~= "BordeSuperior" and v.Name ~= "BordeIzquierdo" then
 							v.Visible = false   -- then we make them invisible
+							game.TweenService:Create(v,TweenInfo.new(.3, Enum.EasingStyle.Linear),{Position = UDim2.new(0, -0.5,0, 0)}):Play()
 							end
 						end
-					end 
-					EjemploBase.Visible = true  -- We make current page visible but not others
+					end
+					EjemploBase.Visible = true  -- We make current page visible but not others	
+					game.TweenService:Create(EjemploBase,TweenInfo.new(.3, Enum.EasingStyle.Linear),{Position = UDim2.new(0, 0,0, 0)}):Play()					
 				end)
 
+				capa.MouseButton1Click:Connect(function()
+					for _, buttonaba in pairs(capa.Parent.Parent.Parent.Tabla:GetChildren()) do
+						if buttonaba:IsA("Frame") then
+							if buttonaba.Name == "SeccionTrial" then
+								if buttonaba:FindFirstChild("capa") then
+									buttonaba.capa.SectionName.TextColor3 = Color3.fromRGB(140, 140, 140)
+								end
+							end
+						end
+					end
+					capa.SectionName.TextColor3 = Color3.fromRGB(157, 109, 106)
+				end)
 
 				------------------------------------------------------------------
 
 
 				EjemploBase.Name = "EjemploBase"
 				EjemploBase.Parent = pagesFolder
-				EjemploBase.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+				EjemploBase.BackgroundColor3 = themes.Background
 				EjemploBase.Size = UDim2.new(0, 562, 0, 389)
 				EjemploBase.Visible = false
 				
@@ -2224,13 +2238,13 @@
 				
 				BordeSuperior_2.Name = "BordeSuperior"
 				BordeSuperior_2.Parent = EjemploBase
-				BordeSuperior_2.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+				BordeSuperior_2.BackgroundColor3 = themes.Background
 				BordeSuperior_2.BorderSizePixel = 0
 				BordeSuperior_2.Size = UDim2.new(0, 561, 0, 8)
 				
 				BordeIzquierdo_2.Name = "BordeIzquierdo"
 				BordeIzquierdo_2.Parent = EjemploBase
-				BordeIzquierdo_2.BackgroundColor3 = Color3.fromRGB(44, 0, 0)
+				BordeIzquierdo_2.BackgroundColor3 = themes.Background
 				BordeIzquierdo_2.BorderSizePixel = 0
 				BordeIzquierdo_2.Size = UDim2.new(0, 5, 0, 388)
 				
@@ -2280,6 +2294,51 @@
 
 					end
 
+					local function HQBNGHHIF_fake_script() -- Lista.Efectos
+						local script = Instance.new('LocalScript', EjemploBase)
+							repeat wait() until script.Parent:FindFirstChild("PaginaDer")
+							repeat wait() until script.Parent:FindFirstChild("PaginaIzq")
+							local NDR11 = script.Parent.PaginaDer
+							local NDR12 = script.Parent.PaginaIzq
+							while wait() do
+								for _, buttonaba in pairs(NDR11:GetChildren()) do
+									if buttonaba.Name:find("BotonEjemplo") or buttonaba.Name:find("ToggleEjemplo") or buttonaba.Name:find("DropdownEjemplo") then
+										if buttonaba:FindFirstChild("capa") then
+											buttonaba.capa.MouseEnter:Connect(function()
+												pcall(function()
+													game:GetService("TweenService"):Create(buttonaba.capa,TweenInfo.new(1),{BackgroundTransparency=0.75}):Play()
+												end)
+											end)
+											buttonaba.capa.MouseLeave:Connect(function()
+												pcall(function()
+													game:GetService("TweenService"):Create(buttonaba.capa,TweenInfo.new(1),{BackgroundTransparency=0.9}):Play()
+												end)
+											end)
+										end
+									end
+								end
+								for _, buttonaba in pairs(NDR12:GetChildren()) do	
+									if buttonaba.Name:find("BotonEjemplo") or buttonaba.Name:find("ToggleEjemplo") or buttonaba.Name:find("DropdownEjemplo") then
+										if buttonaba:FindFirstChild("capa") then
+											buttonaba.capa.MouseEnter:Connect(function()
+												pcall(function()
+													game:GetService("TweenService"):Create(buttonaba.capa,TweenInfo.new(1),{BackgroundTransparency=0.75}):Play()
+												end)
+											end)
+											buttonaba.capa.MouseLeave:Connect(function()
+												pcall(function()
+													game:GetService("TweenService"):Create(buttonaba.capa,TweenInfo.new(1),{BackgroundTransparency=0.9}):Play()
+												end)
+											end)
+										end
+									end
+								end
+								break
+							end
+					end
+					coroutine.wrap(HQBNGHHIF_fake_script)()
+
+
 					local ElementHandler = {}
 			
 					function ElementHandler:AddButton(btnText, callback)
@@ -2291,6 +2350,7 @@
 						local SubIcon_2 = Instance.new("ImageLabel")
 						local SectionName_2 = Instance.new("TextLabel")
 						local UIListLayout_3 = Instance.new("UIListLayout")
+						local UICorner_43 = Instance.new("UICorner")
 						
 						BotonEjemplo.Name = "BotonEjemplo"
 						BotonEjemplo.Parent = paginaelegida
@@ -2299,16 +2359,21 @@
 						BotonEjemplo.BorderSizePixel = 0
 						BotonEjemplo.Position = UDim2.new(0.0330739282, 0, 0, 0)
 						BotonEjemplo.Size = UDim2.new(0, 240, 0, 41)
-						
+
+						UICorner_36.CornerRadius = UDim.new(0, 5)
+						UICorner_36.Parent = BotonEjemplo
+
 						capa_2.Name = "capa"
 						capa_2.Parent = BotonEjemplo
-						capa_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						capa_2.BackgroundTransparency = 1.000
+						capa_2.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+						capa_2.BackgroundTransparency = 0.9
 						capa_2.BorderSizePixel = 0
-						capa_2.Size = UDim2.new(0, 239, 0, 48)
+						capa_2.Size = UDim2.new(0, 240, 0, 41)
 						capa_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 						capa_2.ImageTransparency = 1.000
-						
+
+						UICorner_43.Parent = capa_2
+
 						SubIcon_2.Name = "SubIcon"
 						SubIcon_2.Parent = capa_2
 						SubIcon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2324,7 +2389,7 @@
 						SectionName_2.BackgroundTransparency = 1.000
 						SectionName_2.BorderSizePixel = 0
 						SectionName_2.Position = UDim2.new(0.0338482074, 0, 0.25, 0)
-						SectionName_2.Size = UDim2.new(0, 160, 0, 20)
+						SectionName_2.Size = UDim2.new(0, 115, 0, 20)
 						SectionName_2.Font = 19
 						SectionName_2.Text = btnText
 						SectionName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -2335,6 +2400,8 @@
 						UIListLayout_3.Parent = BotonEjemplo
 						UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
 						capa_2.MouseButton1Click:Connect(function()
+							capa_2.Size = UDim2.new(0, 200, 0, 41)
+							game.TweenService:Create(capa_2,TweenInfo.new(.3, Enum.EasingStyle.Quad),{Size = UDim2.new(0, 240, 0, 41)}):Play()
 							callback()
 						end)
 					end
@@ -2351,7 +2418,8 @@
 						local ToggleIcon = Instance.new("Frame")
 						local UICorner_12 = Instance.new("UICorner")
 						local UIListLayout_6 = Instance.new("UIListLayout")
-		
+						local UICorner_43 = Instance.new("UICorner")
+
 						ToggleEjemplo.Name = "ToggleEjemplo"
 						ToggleEjemplo.Parent = paginaelegida
 						ToggleEjemplo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2362,13 +2430,15 @@
 						
 						capa_4.Name = "capa"
 						capa_4.Parent = ToggleEjemplo
-						capa_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						capa_4.BackgroundTransparency = 1.000
+						capa_4.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+						capa_4.BackgroundTransparency = 0.9
 						capa_4.BorderSizePixel = 0
 						capa_4.Size = UDim2.new(0, 240, 0, 41)
 						capa_4.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 						capa_4.ImageTransparency = 1.000
 						
+						UICorner_43.Parent = capa_4
+
 						SectionName_4.Name = "SectionName"
 						SectionName_4.Parent = capa_4
 						SectionName_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2409,6 +2479,7 @@
 						local secondposition = UDim2.new(0.48, 0, 0.02, 0)
 						capa_4.MouseButton1Click:Connect(function()
 							tog = not tog
+							callback(tog) -- Callbacks whenever we toggle
 							if tog then 
 								game.TweenService:Create(ToggleIcon, TweenInfo.new(0.15, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
 									BackgroundColor3 = Color3.fromRGB(47, 75, 255)
@@ -2426,11 +2497,10 @@
 								}):Play()
 								---We Put our animation here when the toggle is off
 							end
-							callback(tog) -- Callbacks whenever we toggle
 						end)
 					end
 
-					function ElementHandler:AddTexbox(togInfo, name, callback)
+					function ElementHandler:AddTextbox(togInfo, name, callback)
 
 						name =  name or ""
 						togInfo = togInfo or "textbox"
@@ -2438,6 +2508,7 @@
 						
 						local TextBoxEjemplo = Instance.new("Frame")
 						local capa_5 = Instance.new("ImageButton")
+						local capa_10 = Instance.new("ImageButton")
 						local TextBox = Instance.new("TextBox")
 						local UICorner_13 = Instance.new("UICorner")
 						local NameBox = Instance.new("TextLabel")
@@ -2453,27 +2524,37 @@
 						
 						capa_5.Name = "capa"
 						capa_5.Parent = TextBoxEjemplo
-						capa_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						capa_5.BackgroundTransparency = 1.000
+						capa_5.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+						capa_5.BackgroundTransparency = 0.9
 						capa_5.BorderSizePixel = 0
 						capa_5.Size = UDim2.new(0, 239, 0, 42)
 						capa_5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 						capa_5.ImageTransparency = 1.000
 						
-						TextBox.Parent = capa_5
+
+						capa_10.Name = "capa"
+						capa_10.Parent = TextBoxEjemplo
+						capa_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+						capa_10.BackgroundTransparency = 0.7
+						capa_10.BorderSizePixel = 0
+						capa_10.BackgroundTransparency = 0.500
+						capa_10.Size = UDim2.new(0, 122, 0, 24)
+						capa_10.Position = UDim2.new(0.473339647, 0, 0.1875, 0)
+						capa_10.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+						capa_10.ImageTransparency = 1.000
+
+						TextBox.Parent = capa_10
 						TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-						TextBox.BackgroundTransparency = 0.700
-						TextBox.Position = UDim2.new(0.473339647, 0, 0.1875, 0)
-						TextBox.Size = UDim2.new(0, 122, 0, 24)
+						TextBox.BackgroundTransparency = 1
+						TextBox.Position = UDim2.new(0, 0, 0, 0)
+						TextBox.Size = UDim2.new(0, 122, 0, 22)
 						TextBox.Font = 19
 						TextBox.Text = name
 						TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 						TextBox.TextSize = 10
 						TextBox.TextWrapped = true
 						TextBox.TextScaled = true
-						
-						UICorner_13.Parent = TextBox
-						
+												
 						NameBox.Name = "NameBox"
 						NameBox.Parent = TextBoxEjemplo
 						NameBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2508,6 +2589,7 @@
 							
 						local SliderEjemplo = Instance.new("Frame")
 						local capa_3 = Instance.new("ImageButton")
+						local capa_9 = Instance.new("ImageButton")
 						local SectionName_3 = Instance.new("TextLabel")
 						local Sliderboton = Instance.new("TextButton")
 						local UICorner_8 = Instance.new("UICorner")
@@ -2515,6 +2597,7 @@
 						local UICorner_9 = Instance.new("UICorner")
 						local SliderNumber = Instance.new("TextLabel")
 						local UICorner_10 = Instance.new("UICorner")
+						local UICorner_43 = Instance.new("UICorner")
 						local UIListLayout_5 = Instance.new("UIListLayout")
 						
 						SliderEjemplo.Name = "SliderEjemplo"
@@ -2525,10 +2608,19 @@
 						SliderEjemplo.Position = UDim2.new(0.0330739282, 0, 0.319277108, 0)
 						SliderEjemplo.Size = UDim2.new(0, 240, 0, 75)
 						
+						capa_9.Name = "capa"
+						capa_9.Parent = SliderEjemplo
+						capa_9.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+						capa_9.BackgroundTransparency = 0.9
+						capa_9.BorderSizePixel = 0
+						capa_9.Size = UDim2.new(0, 240, 0, 75)
+						capa_9.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+						capa_9.ImageTransparency = 1.000
+
 						capa_3.Name = "capa"
-						capa_3.Parent = SliderEjemplo
+						capa_3.Parent = capa_9
 						capa_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						capa_3.BackgroundTransparency = 1.000
+						capa_3.BackgroundTransparency = 1
 						capa_3.BorderSizePixel = 0
 						capa_3.Size = UDim2.new(0, 239, 0, 48)
 						capa_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
@@ -2580,22 +2672,21 @@
 						SliderNumber.TextColor3 = Color3.fromRGB(255, 255, 255)
 						SliderNumber.TextSize = 10
 						SliderNumber.TextWrapped = true
-						
-						UICorner_10.Parent = SliderNumber
-						UIListLayout_5.Parent = SliderEjemplo
+
+						UICorner_43.Parent = SliderNumber
+						UICorner_10.Parent = capa_9
+						UIListLayout_5.Parent = capa_9
 						UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
 						Sliderboton.MouseButton1Down:Connect(function()
 						Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 222) * SliderLine.AbsoluteSize.X) + tonumber(minvalue)) or 0
 						pcall(function()
-							SliderNumber.Text = Value
 							callback(Value)
 						end)
 						SliderLine.Size = UDim2.new(0, math.clamp(mouse.X - SliderLine.AbsolutePosition.X, 0, 224), 0, 12)
 						moveconnection = mouse.Move:Connect(function()
-							
+							SliderNumber.Text = Value
 							Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 224) * SliderLine.AbsoluteSize.X) + tonumber(minvalue))
 							pcall(function()
-								SliderNumber.Text = Value
 								callback(Value)
 							end)
 							SliderLine.Size = UDim2.new(0, math.clamp(mouse.X - SliderLine.AbsolutePosition.X, 0, 224), 0, 12)
@@ -2604,7 +2695,6 @@
 							if Mouse.UserInputType == Enum.UserInputType.MouseButton1 then
 								Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 224) * SliderLine.AbsoluteSize.X) + tonumber(minvalue))
 								pcall(function()
-									SliderNumber.Text = Value
 									callback(Value)
 								end)
 								SliderLine.Size = UDim2.new(0, math.clamp(mouse.X - SliderLine.AbsolutePosition.X, 0, 224), 0, 12)
@@ -2633,6 +2723,7 @@
 						local UIListLayout_9 = Instance.new("UIListLayout")
 						local UIListLayout_12 = Instance.new("UIListLayout")
 						local UIListLayout_39 = Instance.new("UIListLayout")
+						local UICorner_44 = Instance.new("UICorner")
 
 					
 						DropdownEjemplo.Name = "DropdownEjemplo"
@@ -2667,14 +2758,16 @@
 
 						capa_7.Name = "capa"
 						capa_7.Parent = DropdownEjemplo
-						capa_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						capa_7.BackgroundTransparency = 1.000
+						capa_7.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+						capa_7.BackgroundTransparency = 0.9
 						capa_7.BorderSizePixel = 0
-						capa_7.Size = UDim2.new(0, 239, 0, 48)
+						capa_7.Size = UDim2.new(0, 240, 0, 41)
 						capa_7.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 						capa_7.ImageTransparency = 1.000
 						capa_7.LayoutOrder = 0
 						capa_7.ZIndex = 1
+
+						UICorner_44.Parent = capa_7
 
 						SubIcon_3.Name = "SubIcon"
 						SubIcon_3.Parent = capa_7
@@ -2705,14 +2798,17 @@
 						capa_7.MouseButton1Click:Connect(function()
 							if IsDropped then
 								IsDropped = false
-								DropdownContainer.Size = UDim2.new(0, 240, 0, 0)
-								DropdownEjemplo.Size = UDim2.new(0, 240, 0, 41)
+								game.TweenService:Create(DropdownContainer,TweenInfo.new(.3, Enum.EasingStyle.Quad),{Size = UDim2.new(0, 240, 0, 0)}):Play()
+								game.TweenService:Create(DropdownEjemplo,TweenInfo.new(.3, Enum.EasingStyle.Quad),{Size = UDim2.new(0, 240, 0, 41)}):Play()
 								DropdownContainer.BackgroundTransparency = 1
+								game.TweenService:Create(SubIcon_3,TweenInfo.new(.3, Enum.EasingStyle.Linear),{Rotation = 0}):Play()
 							else
 								IsDropped = true
 								DropdownContainer.BackgroundTransparency = 0.6
-								DropdownContainer.Size = UDim2.new(0, 240, 0, 124)
-								DropdownEjemplo.Size = UDim2.new(0, 240, 0, 174)
+								game.TweenService:Create(DropdownContainer,TweenInfo.new(.3, Enum.EasingStyle.Quad),{Size = UDim2.new(0, 240, 0, 124)}):Play()
+								game.TweenService:Create(DropdownEjemplo,TweenInfo.new(.3, Enum.EasingStyle.Quad),{Size = UDim2.new(0, 240, 0, 174)}):Play()
+								game.TweenService:Create(SubIcon_3,TweenInfo.new(.3, Enum.EasingStyle.Linear),{Rotation = 90}):Play()
+
 							end
 						end)
 						for i,v in next, list do
@@ -2795,8 +2891,8 @@
 						
 						capa_6.Name = "capa"
 						capa_6.Parent = KeybindEjemplo
-						capa_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						capa_6.BackgroundTransparency = 1.000
+						capa_6.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+						capa_6.BackgroundTransparency = 0.9
 						capa_6.BorderSizePixel = 0
 						capa_6.Size = UDim2.new(0, 239, 0, 48)
 						capa_6.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
@@ -2841,9 +2937,50 @@
 						
 						UIListLayout_7.Parent = KeybindEjemplo
 						UIListLayout_7.SortOrder = Enum.SortOrder.LayoutOrder
-
 					end
-					
+
+					function ElementHandler:AddLabel(gtgrnugru)
+						gtgrnugru = gtgrnugru or "Text Label"
+
+						local BotonEjemplo32 = Instance.new("Frame")
+						local SectionName_2 = Instance.new("TextLabel")
+						
+						BotonEjemplo32.Name = "LabelEjemplo"
+						BotonEjemplo32.Parent = paginaelegida
+						BotonEjemplo32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						BotonEjemplo32.BackgroundTransparency = 1.000
+						BotonEjemplo32.BorderSizePixel = 0
+						BotonEjemplo32.Position = UDim2.new(0.0330739282, 0, 0, 0)
+						BotonEjemplo32.Size = UDim2.new(0, 240, 0, 41)
+
+						SectionName_2.Name = "SectionName"
+						SectionName_2.Parent = BotonEjemplo32
+						SectionName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						SectionName_2.BackgroundTransparency = 1.000
+						SectionName_2.BorderSizePixel = 0
+						SectionName_2.Position = UDim2.new(0, 0, 0, 0)
+						SectionName_2.Size = UDim2.new(0, 240, 0, 41)
+						SectionName_2.Font = 19
+						SectionName_2.Text = gtgrnugru
+						SectionName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+						SectionName_2.TextSize = 16
+						SectionName_2.TextWrapped = true
+						SectionName_2.TextXAlignment = Enum.TextXAlignment.Center
+					end
+
+
+					function ElementHandler:AddLine(btnghcc)
+						btnghcc = Color3.fromRGB(btnghcc) or Color3.fromRGB(255, 255, 255)
+
+						local SliderLine22 = Instance.new("Frame")
+
+
+						SliderLine22.Name = "SliderLine"
+						SliderLine22.Parent = paginaelegida
+						SliderLine22.BackgroundColor3 = btnghcc
+						SliderLine22.Size = UDim2.new(0, 240, 0, 2)			
+					end
+
 					return ElementHandler
 				end
 				return TablaSeccion
@@ -2852,3 +2989,4 @@
 		end
 		return Library
 	end
+
