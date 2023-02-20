@@ -1,5 +1,5 @@
 
-local Library = {}
+Library = {}
 
 function Library:AddGui()
 		
@@ -235,4 +235,4 @@ function Library:AddGui()
 	coroutine.wrap(VUTY_fake_script)()
 end
 
-print("cargado")
+print("hello")
