@@ -233,6 +233,6 @@ function Library:AddGui()
 		end)
 	end
 	coroutine.wrap(VUTY_fake_script)()
-
-	return Library
 end
+
+print("cargado")
